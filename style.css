@@ -23,6 +23,12 @@ body {
     box-shadow: none;
 }
 
+#date {
+    text-align: center;
+    font-family: 'Boogaloo', cursive;
+    font-size: 3rem;
+}
+
 h1 {
     font-family: 'Boogaloo', cursive;
     padding: 1rem;
@@ -37,4 +43,11 @@ input {
     padding: 10px 10px 10px 10px;
     box-sizing: border-box;
     border: 3px solid rgba(0, 0, 0, 0);
+}
+
+li {
+    list-style: none;
+    margin-top: 5px;
+    font-family: 'Boogaloo', cursive;
+    /* font-weight: lighter; */
 }
