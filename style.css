@@ -1,8 +1,40 @@
+/*
+fonts:
+font-family: 'Mansalva', cursive;
+font-family: 'Boogaloo', cursive;
+*/
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #999;
+    background: #AAFFA9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+    width: 360px;
+    margin: 100px auto;
+    /* background-color: #f7f7f7; */
+    box-shadow: none;
+}
+
+h1 {
+    font-family: 'Boogaloo', cursive;
+    padding: 1rem;
+}
+
+input {
+    font-size: 18px;
+    font-family: 'Mansalva', cursive;
+    color: #2980b9;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
 }
