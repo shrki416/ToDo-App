@@ -21,38 +21,12 @@ input {
     font-size: 24px;
     font-family: 'Boogaloo', cursive;
     width: 100%;
-    padding: 0.5rem;
-    /* box-sizing: border-box; */
 }
 
 li {
     list-style: none;
-    margin-top: 5px;
-    padding-left: 0.5rem;
     font-family: 'Boogaloo', cursive;
     font-size: 24px;
-}
-
-.add-Btn {
-    width: 40px;
-    height: 40px;
-    margin: auto;
-}
-
-.delete-Btn {
-    width: 25px;
-    height: 25px;
-    margin: 5px 0px;
-    color: #e84118;
-}
-
-.addTodo {
-    display: flex;
-    justify-content: space-between;
-}
-
-.newTodo {
-    display: inline-block;
 }
 
 #date {
@@ -73,5 +47,10 @@ li {
     padding: 0.5rem 0.5rem;
 }
 
+.add-Btn {
+    font-size: 36px;
+}
 
-
+.delete-Btn {
+    color: #e84118;
+}
