@@ -29,16 +29,22 @@ input {
     width: 100%;
 }
 
-li {
-    list-style: none;
-    font-family: 'Boogaloo', cursive;
-    font-size: 24px;
+span {
+    float: left;
+    padding-right: 0.5rem;
 }
 
 #date {
     text-align: center;
     font-family: 'Boogaloo', cursive;
     font-size: 3rem;
+}
+
+.todoList {
+    list-style: none;
+    font-family: 'Boogaloo', cursive;
+    font-size: 24px;
+    padding-bottom: 0.5rem;
 }
 
 .list {
