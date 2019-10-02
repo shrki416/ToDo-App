@@ -17,21 +17,21 @@
 
     <div class="list">
 
-        <div class="container" id="addTodo">
-            <h1>Daily to-do's <span class="add-Btn"><i class="fas fa-plus"></i></span> </h1>
-        </div>
-
         <div class="container">
-            <input type="text" placeholder="What would you like to do?">
-        </div>
+            <h1>Daily to-do's</h1>
 
-        <div class="container" id="newTodo">
+            <form action="">
+                <input id="addTodo" type="text" placeholder="What would you like to do?">
+                <button type="submit" class="add-Btn"><i class="fas fa-plus"></i></button>
+            </form>
+
             <ul class="todoList">
-                <li class="todo"> <span class="delete-Btn"><i class="fas fa-trash-alt"></i></span> Walk Dog</li>
+                <li id="newTodo"> <span><i class="fas fa-trash-alt"></i></span> Walk Dog</li>
             </ul>
         </div>
 
     </div>
+
 
     <script src="script.js"></script>
 </body>

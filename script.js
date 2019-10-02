@@ -11,4 +11,3 @@ const date = document.getElementById('date').innerHTML = today.toLocaleString('e
 
 
 
-

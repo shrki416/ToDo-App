@@ -11,10 +11,16 @@ body {
 }
 
 h1 {
-    float: left;
     font-family: 'Boogaloo', cursive;
     font-size: 48px;
     margin: 0;
+    padding-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.5rem;
 }
 
 input {
@@ -43,14 +49,17 @@ li {
 .container {
     width: 300px;
     margin: auto;
-    display: flex;
+    display: block;
     padding: 0.5rem 0.5rem;
 }
 
 .add-Btn {
-    font-size: 36px;
+    font-size: 24px;
+    background-color: transparent;
+    padding: 0.5rem;
+    border: none;
 }
 
-.delete-Btn {
+.fa-trash-alt {
     color: #e84118;
 }
