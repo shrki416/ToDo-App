@@ -17,6 +17,7 @@ h1 {
     padding-bottom: 1rem;
 }
 
+
 form {
     display: flex;
     width: 100%;
@@ -66,6 +67,16 @@ span {
     border: none;
 }
 
-.fa-trash-alt {
+.fa-trash {
     color: #e84118;
+    font-size: 20px;
 }
+
+.fa-check {
+    color: #388e3c;
+    font-size: 20px; 
+}
+
+/* li:hover {
+    /* text-decoration: line-through; */
+/* } */
