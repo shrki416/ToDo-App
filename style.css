@@ -41,7 +41,7 @@ span {
     font-size: 3rem;
 }
 
-.todoList {
+#newTodo {
     list-style: none;
     font-family: 'Boogaloo', cursive;
     font-size: 24px;
@@ -77,6 +77,9 @@ span {
     font-size: 20px; 
 }
 
-/* li:hover {
-    /* text-decoration: line-through; */
-/* } */
+.checked {
+    font-size: 24px;
+    list-style: none;
+    font-family: 'Boogaloo', cursive;
+    text-decoration: line-through;
+}
