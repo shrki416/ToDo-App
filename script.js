@@ -6,10 +6,9 @@ const options = {
   day: "numeric"
 };
 
-const date = (document.getElementById("date").innerHTML = todaysDate.toLocaleString(
-  "en-US",
-  options
-));
+const date = (document.getElementById(
+  "date"
+).innerHTML = todaysDate.toLocaleString("en-US", options));
 
 let userInputValue = document.getElementById("addForm");
 
@@ -18,7 +17,7 @@ let todoList = document.getElementById("items");
 // add item
 userInputValue.addEventListener("submit", addItem);
 // remove item
-todoList.addEventListener("click", removeItem); 
+todoList.addEventListener("click", removeItem);
 // check-off item
 todoList.addEventListener("click", checkOffItem);
 
@@ -39,6 +38,7 @@ function addItem(e) {
   li.appendChild(checkMark);
 
   todoList.appendChild(li);
+  document.getElementById("addTodo").value = "";
 }
 
 function removeItem(e) {

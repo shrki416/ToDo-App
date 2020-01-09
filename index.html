@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Todo App</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Mansalva&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3bf33d8c91.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Boogaloo|Mansalva&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3bf33d8c91.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav id="date">
-        <h1>Monday, August 9, 2016</h1>
+      <h1>Monday, August 9, 2016</h1>
     </nav>
     <div class="list">
-        <div class="container">
-            <h1>Daily to-do's</h1>
-            <form id="addForm" action="">
-                <input id="addTodo" type="text" placeholder="What would you like to do?" required>
-                <button type="submit" class="add-Btn" value="Submit"><i class="fas fa-plus"></i></button>
-            </form>
-            <ul id="items"></ul>
-        </div>
+      <div class="container">
+        <h1>Daily to-do's</h1>
+        <form id="addForm">
+          <input
+            id="addTodo"
+            type="text"
+            placeholder="What would you like to do?"
+            required
+          />
+          <button type="submit" class="add-Btn" value="Submit">
+            <i class="fas fa-plus"></i>
+          </button>
+        </form>
+        <ul id="items"></ul>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
