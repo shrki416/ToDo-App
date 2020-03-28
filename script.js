@@ -14,14 +14,7 @@ let userInputValue = document.getElementById("addForm");
 
 let todoList = document.getElementById("items");
 
-// add item
-userInputValue.addEventListener("submit", addItem);
-// remove item
-todoList.addEventListener("click", removeItem);
-// check-off item
-todoList.addEventListener("click", checkOffItem);
-
-function addItem(e) {
+const addItem = e => {
   e.preventDefault();
 
   let newTodo = document.getElementById("addTodo").value;
@@ -39,17 +32,24 @@ function addItem(e) {
 
   todoList.appendChild(li);
   document.getElementById("addTodo").value = "";
-}
+};
 
-function removeItem(e) {
+const removeItem = e => {
   if (e.target.classList.contains("fa-trash")) {
     let remove = e.target.parentElement;
     todoList.removeChild(remove);
   }
-}
+};
 
-function checkOffItem(e) {
+const checkOffItem = e => {
   if (e.target.classList.contains("fa-check")) {
     e.target.parentElement.style.textDecoration = "line-through";
   }
-}
+};
+
+// add item
+userInputValue.addEventListener("submit", addItem);
+// remove item
+todoList.addEventListener("click", removeItem);
+// check-off item
+todoList.addEventListener("click", checkOffItem);
