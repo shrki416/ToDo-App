@@ -1,4 +1,9 @@
 const todaysDate = new Date();
+
+const date = document.getElementById("date");
+const userInputValue = document.getElementById("addForm");
+const todoList = document.getElementById("items");
+
 const savedTodos = [];
 const getTodos = JSON.parse(localStorage.getItem("todos")) || [];
 
@@ -9,11 +14,23 @@ const options = {
   day: "numeric",
 };
 
-const date = document.getElementById("date");
-const userInputValue = document.getElementById("addForm");
-const todoList = document.getElementById("items");
-
 date.innerHTML = todaysDate.toLocaleString("en-US", options);
+
+getTodos.forEach((todo) => {
+  let li = document.createElement("li");
+  li.id = "newTodo";
+  li.appendChild(document.createTextNode(todo));
+
+  let deleteBtn = document.createElement("span");
+  deleteBtn.className = "fas fa-trash";
+  li.appendChild(deleteBtn);
+
+  let checkMark = document.createElement("span");
+  checkMark.className = "fas fa-check";
+  li.appendChild(checkMark);
+
+  todoList.appendChild(li);
+});
 
 const addItem = (e) => {
   e.preventDefault();
@@ -43,6 +60,7 @@ const removeItem = (e) => {
     let remove = e.target.parentElement;
     todoList.removeChild(remove);
   }
+  localStorage.setItem("todos", JSON.stringify(savedTodos));
 };
 
 const checkOffItem = (e) => {
