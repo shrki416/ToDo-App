@@ -1,20 +1,21 @@
 const todaysDate = new Date();
+const savedTodos = [];
+const getTodos = JSON.parse(localStorage.getItem("todos")) || [];
+
 const options = {
   weekday: "long",
   year: "numeric",
   month: "long",
-  day: "numeric"
+  day: "numeric",
 };
 
-const date = (document.getElementById(
-  "date"
-).innerHTML = todaysDate.toLocaleString("en-US", options));
+const date = document.getElementById("date");
+const userInputValue = document.getElementById("addForm");
+const todoList = document.getElementById("items");
 
-let userInputValue = document.getElementById("addForm");
+date.innerHTML = todaysDate.toLocaleString("en-US", options);
 
-let todoList = document.getElementById("items");
-
-const addItem = e => {
+const addItem = (e) => {
   e.preventDefault();
 
   let newTodo = document.getElementById("addTodo").value;
@@ -31,25 +32,25 @@ const addItem = e => {
   li.appendChild(checkMark);
 
   todoList.appendChild(li);
+  savedTodos.push(newTodo);
+  localStorage.setItem("todos", JSON.stringify(savedTodos));
   document.getElementById("addTodo").value = "";
+  document.getElementById("addTodo").focus();
 };
 
-const removeItem = e => {
+const removeItem = (e) => {
   if (e.target.classList.contains("fa-trash")) {
     let remove = e.target.parentElement;
     todoList.removeChild(remove);
   }
 };
 
-const checkOffItem = e => {
+const checkOffItem = (e) => {
   if (e.target.classList.contains("fa-check")) {
     e.target.parentElement.style.textDecoration = "line-through";
   }
 };
 
-// add item
 userInputValue.addEventListener("submit", addItem);
-// remove item
 todoList.addEventListener("click", removeItem);
-// check-off item
 todoList.addEventListener("click", checkOffItem);
