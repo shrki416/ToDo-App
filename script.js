@@ -64,9 +64,10 @@ const removeItem = (e) => {
 };
 
 const checkOffItem = (e) => {
-  if (e.target.classList.contains("fa-check")) {
-    e.target.parentElement.style.textDecoration = "line-through";
-  }
+  const todoItem = e.target.parentElement;
+  todoItem.classList.contains("checked")
+    ? todoItem.classList.remove("checked")
+    : todoItem.classList.add("checked");
 };
 
 userInputValue.addEventListener("submit", addItem);
