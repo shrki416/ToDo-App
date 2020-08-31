@@ -7,21 +7,13 @@
 }
 
 body {
-  background: #aaffa9; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #11ffbd,
-    #aaffa9
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #11ffbd,
-    #aaffa9
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #aaffa9;
+  background: -webkit-linear-gradient(to right, #11ffbd, #aaffa9);
+  background: linear-gradient(to right, #11ffbd, #aaffa9);
+  font-family: "Boogaloo", cursive;
 }
 
 h1 {
-  font-family: "Boogaloo", cursive;
   font-size: 48px;
   margin: 0;
   padding-bottom: 1rem;
@@ -36,7 +28,6 @@ form {
 
 input {
   font-size: 18px;
-  font-family: "Boogaloo", cursive;
   width: 100%;
   padding-left: 5px;
 }
@@ -48,13 +39,11 @@ span {
 
 #date {
   text-align: center;
-  font-family: "Boogaloo", cursive;
   font-size: 3rem;
 }
 
 #newTodo {
   list-style: none;
-  font-family: "Boogaloo", cursive;
   font-size: 24px;
   padding-bottom: 0.5rem;
 }
