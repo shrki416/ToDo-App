@@ -38,6 +38,7 @@ span {
 }
 
 #date {
+  margin: 5rem;
   text-align: center;
   font-size: 3rem;
 }
